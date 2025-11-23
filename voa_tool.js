@@ -13,18 +13,20 @@
     // Create UI
     var box = document.createElement("div");
     box.id = "audioToolBox2";
-    Object.assign(box.style, {
-        position: "fixed",
-        top: "20px",
-        left: "20px",
-        background: "#fff",
-        border: "2px solid #000",
-        padding: "12px",
-        width: "300px",
-        zIndex: 999999,
-        fontFamily: "Arial",
-        boxShadow: "0 4px 10px rgba(0,0,0,0.5)"
-    });
+Object.assign(box.style, {
+    position: "fixed",
+    top: "20px",
+    left: "20px",
+    background: "#fff",
+    border: "2px solid #000",
+    padding: "12px",
+    width: "360px",          // tăng size để đủ chỗ cho nút Back
+    whiteSpace: "nowrap",    // chống xuống dòng
+    zIndex: 999999,
+    fontFamily: "Arial",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.5)"
+});
+
 
 box.innerHTML =
     "<b>AUDIO TOOL</b><br><br>" +
