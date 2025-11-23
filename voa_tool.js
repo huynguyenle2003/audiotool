@@ -20,7 +20,7 @@ Object.assign(box.style, {
     background: "#fff",
     border: "2px solid #000",
     padding: "12px",
-    width: "360px",          // tăng size để đủ chỗ cho nút Back
+    width: "320px",          // tăng size để đủ chỗ cho nút Back
     whiteSpace: "nowrap",    // chống xuống dòng
     zIndex: 999999,
     fontFamily: "Arial",
