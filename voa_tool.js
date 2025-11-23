@@ -35,8 +35,7 @@ box.innerHTML =
     " <button id='getEnd2'>Get</button><br><br>" +
     "<button id='playBtn2'>Play</button> " +
     "<button id='pauseBtn2'>Pause</button> " +
-    "<input id='backValue' value='5' style='width:40px;'> s " +
-    "<button id='backCustomBtn'>⏪ Back</button><br><br>" +
+    "<input id='backValue' value='5' style='width:40px;'> s <button id='backCustomBtn'>⏪ Back</button><br><br>" +
     "<button id='loopBtn2' style='width:100%;'>Loop OFF</button><br><br>" +
     "<button id='closeBtn2' style='width:100%;'>Close</button>";
 
