@@ -35,7 +35,7 @@
         " <button id='getEnd2'>Get</button><br><br>" +
         "<button id='playBtn2'>Play</button> " +
         "<button id='pauseBtn2'>Pause</button><br><br>" +
-        "<button id='loopBtn2' style='width:100%;'>Loop Start→End</button><br><br>" +
+        "<button id='loopBtn2' style='width:100%;'>Loop OFF</button><br><br>" +
         "<button id='closeBtn2' style='width:100%;'>Close</button>";
 
     document.body.appendChild(box);
@@ -81,7 +81,8 @@
         if (loopTimer2) {
             clearInterval(loopTimer2);
             loopTimer2 = null;
-            alert("Loop OFF");
+            //alert("Loop OFF");
+            document.getElementById("loopBtn2").textContent = "Loop OFF";
             return;
         }
 
@@ -98,7 +99,8 @@
             }
         }, 150);
 
-        alert("Loop ON");
+        //alert("Loop ON");
+        document.getElementById("loopBtn2").textContent = "Loop ON";
     };
 
     document.getElementById("closeBtn2").onclick = function () {
