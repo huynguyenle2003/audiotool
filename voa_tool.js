@@ -34,7 +34,8 @@
         "End: <input id='endInput2' value='0:05' style='width:60px;'>" +
         " <button id='getEnd2'>Get</button><br><br>" +
         "<button id='playBtn2'>Play</button> " +
-        "<button id='pauseBtn2'>Pause</button><br><br>" +
+        "<button id='pauseBtn2'>Pause</button> <input id="backValue" value="5" style="width:40px;"> s
+<button id="backCustomBtn">⏪ Back</button> <br><br>" +
         "<button id='loopBtn2' style='width:100%;'>Loop OFF</button><br><br>" +
         "<button id='closeBtn2' style='width:100%;'>Close</button>";
 
@@ -69,6 +70,12 @@
         audio.pause();
     };
 
+    document.getElementById("backCustomBtn").onclick = function () {
+    let sec = parseFloat(document.getElementById("backValue").value) || 0;
+    audio.currentTime = Math.max(0, audio.currentTime - sec);
+};
+
+    
     document.getElementById("playStartBtn2").onclick = function () {
         audio.currentTime = prs(document.getElementById("startInput2").value);
         audio.play();
