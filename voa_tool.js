@@ -93,6 +93,7 @@ box.innerHTML =
             loopTimer2 = null;
             //alert("Loop OFF");
             document.getElementById("loopBtn2").textContent = "Loop OFF";
+            document.getElementById("startInput2").value=document.getElementById("endInput2").value;
             return;
         }
 
