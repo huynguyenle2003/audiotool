@@ -26,18 +26,20 @@
         boxShadow: "0 4px 10px rgba(0,0,0,0.5)"
     });
 
-    box.innerHTML =
-        "<b>AUDIO TOOL</b><br><br>" +
-        "Start: <input id='startInput2' value='0:00' style='width:60px;'>" +
-        " <button id='getStart2'>Get</button>" +
-        " <button id='playStartBtn2'>Play Start</button><br><br>" +
-        "End: <input id='endInput2' value='0:05' style='width:60px;'>" +
-        " <button id='getEnd2'>Get</button><br><br>" +
-        "<button id='playBtn2'>Play</button> " +
-        "<button id='pauseBtn2'>Pause</button> <input id="backValue" value="5" style="width:40px;"> s
-<button id="backCustomBtn">⏪ Back</button> <br><br>" +
-        "<button id='loopBtn2' style='width:100%;'>Loop OFF</button><br><br>" +
-        "<button id='closeBtn2' style='width:100%;'>Close</button>";
+box.innerHTML =
+    "<b>AUDIO TOOL</b><br><br>" +
+    "Start: <input id='startInput2' value='0:00' style='width:60px;'>" +
+    " <button id='getStart2'>Get</button>" +
+    " <button id='playStartBtn2'>Play Start</button><br><br>" +
+    "End: <input id='endInput2' value='0:05' style='width:60px;'>" +
+    " <button id='getEnd2'>Get</button><br><br>" +
+    "<button id='playBtn2'>Play</button> " +
+    "<button id='pauseBtn2'>Pause</button> " +
+    "<input id='backValue' value='5' style='width:40px;'> s " +
+    "<button id='backCustomBtn'>⏪ Back</button><br><br>" +
+    "<button id='loopBtn2' style='width:100%;'>Loop OFF</button><br><br>" +
+    "<button id='closeBtn2' style='width:100%;'>Close</button>";
+
 
     document.body.appendChild(box);
 
